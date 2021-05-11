@@ -80,18 +80,18 @@
                 </tr>
                 <tr>
                   <td>4</td>
+                  <td><a href="#" class="open--popup" data-pop="modify">12345-67890</a></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>신청</td>
                 </tr>
                 <tr>
                   <td>3</td>
@@ -192,19 +192,27 @@
         <table>
           <colgroup>
             <col width="200" />
-            <col width="840" />
+            <col width="320" />
+            <col width="200" />
+            <col width="320" />
           </colgroup>
           <tr>
             <th>주문번호</th>
-            <td>12345-67890</td>
+            <td colspan="3">12345-67890</td>
           </tr>
           <tr>
             <th>상품명</th>
-            <td>큐빅18K반지</td>
+            <td colspan="3">큐빅18K반지</td>
+          </tr>
+          <tr>
+            <th>브랜드</th>
+            <td>골드플러스</td>
+            <th>제조사</th>
+            <td>금반지회사</td>
           </tr>
           <tr>
             <th>상품이미지</th>
-            <td>
+            <td colspan="3">
               <div class="boxItem">
                 <div class="itemThumb">
                   <img src="./images/content/imgThumb1.png" alt="" />
@@ -214,29 +222,107 @@
           </tr>
           <tr>
             <th>Link URL</th>
-            <td>https://www.gode.com</td>
-          </tr>
-          <tr>
-            <th>브랜드</th>
-            <td>골드플러스</td>
-          </tr>
-          <tr>
-            <th>제조사</th>
-            <td>금반지회사</td>
+            <td colspan="3">https://www.gode.com</td>
           </tr>
           <tr>
             <th>정품인증서</th>
-            <td>큐빅18K반지 인증서.pdf</td>
+            <td colspan="3">큐빅18K반지 인증서.pdf</td>
           </tr>
           <tr>
             <th>신청일</th>
-            <td>2021.03.05</td>
+            <td colspan="3">2021.03.05</td>
           </tr>
           <tr>
             <th>추가신청내용</th>
-            <td>1번 코드는 2개 상품에 적용</td>
+            <td colspan="3">1번 코드는 2개 상품에 적용</td>
           </tr>
         </table>
+      </div>
+      <button type="button" class="close">닫기</button>
+    </div>
+  </div>
+
+  <div id="modify" class="popBasic">
+    <div class="box">
+      <h3 class="title">코드신청 상세 내역</h3>
+      <div class="boxTable type--vertical input--confirm">
+        <table>
+          <colgroup>
+            <col width="200" />
+            <col width="320" />
+            <col width="200" />
+            <col width="320" />
+          </colgroup>
+          <tr>
+            <th>주문번호</th>
+            <td colspan="3">12345-67890</td>
+          </tr>
+          <tr>
+            <th>상품명</th>
+            <td colspan="3">
+              <div class="inputBasic type--file size--half">
+                <input type="text" value="큐빅18K반지">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>브랜드</th>
+            <td>
+              <div class="inputBasic">
+                <input type="text" value="골드플러스">
+              </div>
+            </td>
+            <th>제조사</th>
+            <td>
+              <div class="inputBasic">
+                <input type="text" value="금반지회사">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>상품이미지</th>
+            <td colspan="3">
+              <div class="boxItem">
+                <div class="itemThumb">
+                  <img src="./images/content/imgThumb1.png" alt="" />
+                </div>
+              </div>
+              <div class="inputBasic type--file size--half">
+                <input type="text" value="상품이미지">
+                <button type="button">첨부</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Link URL</th>
+            <td colspan="3">
+              <div class="inputBasic type--file size--half">
+                <input type="text" value="https://www.gode.com">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>정품인증서</th>
+            <td colspan="3">
+              <div class="inputBasic type--file size--half">
+                <input type="text" value="큐빅18K반지 인증서.pdf">
+                <button type="button">첨부</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>추가신청내용</th>
+            <td colspan="3">
+              <div class="inputBasic size--half">
+                <textarea></textarea>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="btn mt40">
+        <button type="button" class="btnBasic submit">수정</button>
+        <button type="button" class="btnBasic">취소</button>
       </div>
       <button type="button" class="close">닫기</button>
     </div>

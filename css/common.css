@@ -125,14 +125,13 @@ input[type="radio"]:checked+label:after { content:''; width:10px; height:10px; p
 .boxTable table tr:last-child td { border-bottom:0; }
 .boxTable table tr:hover td { background:#effcfb; }
 .boxTable table td a { text-decoration:underline; font-size:12px; color:#0058ff; }
-.boxTable .boxItem { overflow:hidden; }
+.boxTable .boxItem:after { content:''; display:block; clear:both; visibility:visible; }
 .boxTable .boxItem + .inputBasic { margin-top:20px; }
-.boxTable .itemThumb { width:105px; height:105px; float:left; display:flex; align-items:center; justify-content:center; border-radius:25px; overflow:hidden; }
+.boxTable .itemThumb { width:105px; height:105px; float:left; display:flex; align-items:center; justify-content:center; border-radius:30px; border:1px solid #eff1f2; overflow:hidden; box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.06); }
 .boxTable .itemThumb+.itemThumb { margin-left:20px; }
 
 .boxTable.type--vertical table th,
 .boxTable.type--vertical table td { height:auto; padding:18px 24px; font-size:15px; }
-.boxTable.type--vertical table th { vertical-align:top; }
 .boxTable.type--vertical table td { text-align:left; }
 .boxTable.type--vertical table tr:hover td { background:#fff; }
 
@@ -157,6 +156,7 @@ input[type="radio"]:checked+label:after { content:''; width:10px; height:10px; p
 .boxPaging .num { display:inline-block; margin:0 10px; vertical-align:middle; }
 
 .input--confirm .inputBasic input[type="text"] { height:36px; border:1px solid #707070; }
+.inputBasic.size--half { width:50%; }
 .inputBasic.type--file { position:relative; padding-right:136px; }
 .inputBasic.type--file input[type="text"] { margin-right:136px; }
 .inputBasic.type--file button { width:125px; height:36px; position:absolute; right:0; top:0; border:1px solid #6552f6; border-radius:5px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); color:#6552f6; font-weight:700; font-size:15px; }
